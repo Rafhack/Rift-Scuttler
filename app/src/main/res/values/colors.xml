@@ -3,4 +3,8 @@
     <color name="colorPrimary">#4D2E36</color>
     <color name="colorPrimaryDark">#401822</color>
     <color name="colorAccent">#7c3d4d</color>
+
+    <color name="form_background">#735059</color>
+    <color name="edit_text_background">#CCB1B8</color>
+    <color name="form_button_color">#5C2E3A</color>
 </resources>

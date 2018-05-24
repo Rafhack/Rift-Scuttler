@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">summoner name</string>
+    <string name="rift_search">search</string>
 </resources>
