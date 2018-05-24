@@ -9,6 +9,8 @@
     android:foreground="?android:attr/selectableItemBackground"
     android:gravity="center"
     android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:scrollHorizontally="true"
     android:padding="@dimen/edit_text_padding"
     android:singleLine="true"
     tools:ignore="PrivateResource" />

@@ -21,4 +21,5 @@ class MainActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
         spnRegions.adapter = adapter
     }
+
 }

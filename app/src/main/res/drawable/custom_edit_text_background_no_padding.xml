@@ -4,10 +4,5 @@
 
     <solid android:color="@color/edit_text_background" />
     <corners android:radius="8dp" />
-    <padding
-        android:bottom="@dimen/edit_text_padding"
-        android:left="@dimen/edit_text_padding"
-        android:right="@dimen/edit_text_padding"
-        android:top="@dimen/edit_text_padding" />
 
 </shape>
