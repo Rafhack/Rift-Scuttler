@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "814708921464",
+    "firebase_url": "https://rift-scuttler-c3e45.firebaseio.com",
+    "project_id": "rift-scuttler-c3e45",
+    "storage_bucket": "rift-scuttler-c3e45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814708921464:android:a4288b15a1806070",
+        "android_client_info": {
+          "package_name": "com.firebaseapp.rift_scuttler_c3e45.riftscuttler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814708921464-pqjr84og3nos8npe620o5dn6vajufpp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebaseapp.rift_scuttler_c3e45.riftscuttler",
+            "certificate_hash": "300810d059631896aab6a3d0fd2b08a65af4d13c"
+          }
+        },
+        {
+          "client_id": "814708921464-7fbbfovof36da3dpobs21bq8nrd85v1c.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "814708921464-7fbbfovof36da3dpobs21bq8nrd85v1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_rF4R7K61javO89SANiuubK0DP8yHSws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814708921464-7fbbfovof36da3dpobs21bq8nrd85v1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
