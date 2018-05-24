@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions">
+        <item>@string/rift_region_brazil</item>
+        <item>@string/rift_region_eune</item>
+        <item>@string/rift_region_euw</item>
+        <item>@string/rift_region_jp</item>
+        <item>@string/rift_region_kr</item>
+        <item>@string/rift_region_lan</item>
+        <item>@string/rift_region_las</item>
+        <item>@string/rift_region_na</item>
+        <item>@string/rift_region_oce</item>
+        <item>@string/rift_region_pbe</item>
+        <item>@string/rift_region_ru</item>
+        <item>@string/rift_region_tr</item>
+    </string-array>
+</resources>

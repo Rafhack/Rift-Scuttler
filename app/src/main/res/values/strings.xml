@@ -2,4 +2,16 @@
     <string name="app_name">Rift Scuttler</string>
     <string name="rift_login_nick_hint">summoner name</string>
     <string name="rift_search">search</string>
+    <string name="rift_region_brazil">Brazil</string>
+    <string name="rift_region_eune">EU Nordic &amp; East</string>
+    <string name="rift_region_euw">EU West</string>
+    <string name="rift_region_jp">Japan</string>
+    <string name="rift_region_kr">Korea</string>
+    <string name="rift_region_lan">Latin America North</string>
+    <string name="rift_region_las">Latin America South</string>
+    <string name="rift_region_na">North America</string>
+    <string name="rift_region_oce">Oceania</string>
+    <string name="rift_region_pbe">Public Beta</string>
+    <string name="rift_region_ru">Russia</string>
+    <string name="rift_region_tr">Turkey</string>
 </resources>

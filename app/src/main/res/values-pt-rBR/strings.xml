@@ -3,4 +3,16 @@
     <string name="app_name">Rift Scuttler</string>
     <string name="rift_login_nick_hint">nome do invocador</string>
     <string name="rift_search">procurar</string>
+    <string name="rift_region_brazil">Brasil</string>
+    <string name="rift_region_eune">UE Nórdica e Leste</string>
+    <string name="rift_region_euw">UE Ocidental</string>
+    <string name="rift_region_jp">Japão</string>
+    <string name="rift_region_kr">Coreia</string>
+    <string name="rift_region_lan">América Latina Norte</string>
+    <string name="rift_region_las">América Latina Sul</string>
+    <string name="rift_region_na">América do Norte</string>
+    <string name="rift_region_oce">Oceania</string>
+    <string name="rift_region_pbe">Beta Público</string>
+    <string name="rift_region_ru">Rússia</string>
+    <string name="rift_region_tr">Turquia</string>
 </resources>

@@ -22,7 +22,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="0dp"
-        android:layout_height="140dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
@@ -47,30 +47,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="100dp"
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
+            android:background="@drawable/custom_edit_text_background_no_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_edt_summoner_name" />
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_edt_summoner_name">
+
+            <Spinner
+                android:id="@+id/activity_main_spn_regions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/custom_button_background_login"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:minHeight="0dp"
             android:padding="@dimen/edit_text_padding"
             android:text="@string/rift_search"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_edt_summoner_name" />
+            app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
     </android.support.constraint.ConstraintLayout>
 
