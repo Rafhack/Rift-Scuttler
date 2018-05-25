@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4D2E36"
-    tools:context=".MainActivity">
+    tools:context=".presentation.summonersearch.SummonerSearchActivity">
 
     <ImageView
-        android:id="@+id/activity_main_img_logo"
+        android:id="@+id/activity_summoner_search_img_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -30,10 +30,10 @@
         android:elevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_main_img_logo">
+        app:layout_constraintTop_toBottomOf="@+id/activity_summoner_search_img_logo">
 
         <EditText
-            android:id="@+id/activity_main_edt_summoner_name"
+            android:id="@+id/activity_summoner_search_edt_summoner_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -55,13 +55,13 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:background="@drawable/custom_edit_text_background_no_padding"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_summoner_search_btn_search"
+            app:layout_constraintEnd_toStartOf="@+id/activity_summoner_search_btn_search"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/button">
+            app:layout_constraintTop_toTopOf="@+id/activity_summoner_search_btn_search">
 
             <Spinner
-                android:id="@+id/activity_main_spn_regions"
+                android:id="@+id/activity_summoner_search_spn_regions"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
@@ -69,7 +69,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/activity_summoner_search_btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -83,7 +83,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_pressed"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_edt_summoner_name" />
+            app:layout_constraintTop_toBottomOf="@+id/activity_summoner_search_edt_summoner_name" />
 
     </android.support.constraint.ConstraintLayout>
 
