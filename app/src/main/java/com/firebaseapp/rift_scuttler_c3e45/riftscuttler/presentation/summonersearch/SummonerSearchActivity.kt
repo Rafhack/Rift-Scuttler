@@ -4,12 +4,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.R
-import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.RiftScuttlerApplication
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BaseProgressActivity
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.CurrentGameInfo
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Region
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Summoner
-import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.local.SPHelper
 import kotterknife.bindView
 
 class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
@@ -19,9 +17,6 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
     private val edtSummonerName by bindView<EditText>(R.id.activity_summoner_search_edt_summoner_name)
 
     private val presenter = SummonerSearchPresenter(this)
-
-    private val regionIdKey: String = "region"
-    private val summonerIdKey: String = "SummonerId"
 
     //region Lifecycle
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,15 +44,11 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) = Unit
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                SPHelper.getInstance().getEditor(this@SummonerSearchActivity).putString(regionIdKey,
-                        adapter.regions?.get(position)?.endPoint).commit()
-                RiftScuttlerApplication.region = adapter.regions?.get(position)
+                presenter.saveRegion(adapter.regions?.get(position)?.endPoint as String)
             }
         }
         spnRegions.adapter = adapter
-        val defRegion: String = SPHelper.getInstance().getPreferences(this).getString(regionIdKey, "br1")
-        spnRegions.setSelection(Region.values().indexOf(Region.from(defRegion)))
-        RiftScuttlerApplication.region = Region.from(defRegion)
+        presenter.getSavedRegion()
     }
 
     private fun init() {
@@ -68,8 +59,7 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
     //region Overridden methods
     //region SummonerSearchView
     override fun onLoadSummoner(summoner: Summoner) {
-        SPHelper.getInstance().getEditor(this).putString(summonerIdKey, summoner.name).commit()
-        RiftScuttlerApplication.summoner = summoner
+        presenter.saveSummonerName(summoner)
         presenter.getActiveGame(summoner)
     }
 
@@ -83,6 +73,10 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
 
     override fun onLoadSavedSummonerName(name: String) {
         edtSummonerName.setText(name)
+    }
+
+    override fun onLoadSavedRegion(region: String) {
+        spnRegions.setSelection(Region.values().indexOf(Region.from(region)))
     }
 
     override fun onError(message: String) {

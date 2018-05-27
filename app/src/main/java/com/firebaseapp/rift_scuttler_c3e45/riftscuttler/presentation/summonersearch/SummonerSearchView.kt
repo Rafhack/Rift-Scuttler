@@ -10,5 +10,6 @@ interface SummonerSearchView : BaseView {
     fun onNotCurrentPlaying(summoner: Summoner)
     fun onLoadCurrentGame(currentGameInfo: CurrentGameInfo?, summoner: Summoner)
     fun onLoadSavedSummonerName(name: String)
+    fun onLoadSavedRegion(region: String)
 
 }

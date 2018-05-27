@@ -1,6 +1,7 @@
 package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain
 
 import android.content.Context
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.RiftScuttlerApplication
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Summoner
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.local.SPHelper
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.remote.ServiceGenerator
@@ -25,5 +26,9 @@ class SummonerInteractor {
     fun getLocalSavedSummonerName(context: Context): Single<String> {
         val sp = SPHelper.getInstance().getPreferences(context)
         return Single.just(if (sp.contains(summonerIdKey)) sp.getString(summonerIdKey, "") else "")
+    }
+
+    fun saveSummonerNameToLocal(summoner: Summoner, context: Context) {
+        SPHelper.getInstance().getEditor(context).putString(summonerIdKey, summoner.name).commit()
     }
 }
