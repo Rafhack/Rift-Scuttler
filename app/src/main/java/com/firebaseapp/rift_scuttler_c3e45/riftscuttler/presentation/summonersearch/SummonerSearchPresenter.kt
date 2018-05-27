@@ -37,7 +37,7 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
                     view.onLoadCurrentGame(it, summoner)
                 }, {
                     view.setProgress(false)
-                    view.onError(it?.message as String)
+                    view.onNotCurrentPlaying(summoner)
                 })
     }
 
