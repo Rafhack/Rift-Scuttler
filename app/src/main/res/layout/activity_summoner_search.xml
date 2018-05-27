@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_summoner_search_img_logo">
 
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/activity_summoner_search_edt_summoner_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -40,6 +40,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/custom_edit_text_background_login"
+            android:completionThreshold="1"
             android:ems="10"
             android:hint="@string/rift_login_nick_hint"
             android:inputType="textPersonName"

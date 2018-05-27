@@ -53,6 +53,7 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
 
     fun saveSummonerName(summoner: Summoner) {
         summonerInteractor.saveSummonerNameToLocal(summoner, view as Context)
+        summonerInteractor.saveSummonerNameToHistory(summoner.name, view as Context)
         RiftScuttlerApplication.summoner = summoner
     }
 
@@ -68,6 +69,14 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
     fun saveRegion(region: String) {
         regionInteractor.saveRegion(region, view as Context)
         RiftScuttlerApplication.region = Region.from(region)
+    }
+
+    fun getSummonerNameHistory() {
+        subscription = summonerInteractor.getSummonerNameHistory(view as Context)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({
+                    view.onLoadSummonerNameHistory(it)
+                })
     }
 
 }

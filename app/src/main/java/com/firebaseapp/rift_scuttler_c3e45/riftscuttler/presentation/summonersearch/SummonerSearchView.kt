@@ -11,5 +11,6 @@ interface SummonerSearchView : BaseView {
     fun onLoadCurrentGame(currentGameInfo: CurrentGameInfo?, summoner: Summoner)
     fun onLoadSavedSummonerName(name: String)
     fun onLoadSavedRegion(region: String)
+    fun onLoadSummonerNameHistory(savedNames: Set<String>?)
 
 }
