@@ -1,6 +1,7 @@
 package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.presentation.summonersearch
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
@@ -12,6 +13,7 @@ import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BaseProgressActivit
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.CurrentGameInfo
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Region
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Summoner
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.presentation.profile.ProfileActivity
 import kotterknife.bindView
 
 
@@ -87,7 +89,7 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
     }
 
     override fun onNotCurrentPlaying(summoner: Summoner) {
-
+        startActivity(Intent(this, ProfileActivity::class.java))
     }
 
     override fun onLoadCurrentGame(currentGameInfo: CurrentGameInfo?, summoner: Summoner) {
