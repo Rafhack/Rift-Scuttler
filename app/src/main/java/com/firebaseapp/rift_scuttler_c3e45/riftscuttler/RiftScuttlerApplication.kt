@@ -9,8 +9,6 @@ import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Summoner
  */
 class RiftScuttlerApplication : Application() {
 
-    val persistanceInstance = Persistance
-
     override fun onCreate() {
         super.onCreate()
         application = this
