@@ -3,6 +3,7 @@
     package="com.firebaseapp.rift_scuttler_c3e45.riftscuttler">
 
     <application
+        android:name=".RiftScuttlerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.firebaseapp.rift_scuttler_c3e45.base.BaseProgressActivity"
+            android:name="com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BaseProgressActivity"
             android:screenOrientation="portrait" />
     </application>
 

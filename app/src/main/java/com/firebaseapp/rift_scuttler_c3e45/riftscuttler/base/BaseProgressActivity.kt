@@ -1,4 +1,4 @@
-package com.firebaseapp.rift_scuttler_c3e45.base
+package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

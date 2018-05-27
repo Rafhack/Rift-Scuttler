@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
-import com.firebaseapp.rift_scuttler_c3e45.base.BaseProgressActivity
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BaseProgressActivity
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.R
 import kotterknife.bindView
 
