@@ -6,40 +6,53 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <FrameLayout
-        android:id="@+id/activity_profile_frm_fragment"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_profile_vpg_fragments"
         android:layout_width="0dp"
         android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/activity_profile_img_strip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/activity_profile_ci_indicator"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:ci_drawable="@drawable/shape_view_pager"
+        app:ci_drawable_unselected="@drawable/shape_view_pager"
+        app:ci_height="7dp"
+        app:ci_width="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_profile_vpg_fragments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_profile_frm_fragment"
-        app:srcCompat="@drawable/diamond_strip"
-        tools:ignore="ContentDescription" />
+        tools:layout_editor_absoluteY="172dp" />
 
     <TextView
         android:id="@+id/activity_profile_tvw_summoner_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_profile_img_strip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/activity_profile_img_strip"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_profile_vpg_fragments"
+        tools:text="Wednesday bacano" />
+
+    <ImageView
+        android:id="@+id/activity_profile_img_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_profile_vpg_fragments"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteY="235dp"
+        tools:srcCompat="@drawable/diamond_strip" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="0dp"

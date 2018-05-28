@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_top_champions_img_mastery_3"
+        app:layout_constraintStart_toEndOf="@+id/fragment_top_champions_img_mastery_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/fragment_top_img_chmp_square_1"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_top_champions_img_mastery_1"
+        app:layout_constraintRight_toRightOf="@+id/fragment_top_champions_img_mastery_1"
+        app:layout_constraintTop_toTopOf="@+id/fragment_top_champions_img_mastery_1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_img_chmp_square_2"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_top_champions_img_mastery_2"
+        app:layout_constraintRight_toRightOf="@+id/fragment_top_champions_img_mastery_2"
+        app:layout_constraintTop_toTopOf="@+id/fragment_top_champions_img_mastery_2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_img_chmp_square_3"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_top_champions_img_mastery_3"
+        app:layout_constraintRight_toRightOf="@+id/fragment_top_champions_img_mastery_3"
+        app:layout_constraintTop_toTopOf="@+id/fragment_top_champions_img_mastery_3"
+        tools:ignore="ContentDescription" />
+
+
+</android.support.constraint.ConstraintLayout>
