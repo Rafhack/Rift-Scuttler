@@ -113,7 +113,7 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
     }
 
     override fun onError(message: String) {
-
+        showStandardSnack(message)
     }
 
     override fun setProgress(progress: Boolean) {

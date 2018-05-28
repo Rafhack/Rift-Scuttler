@@ -15,4 +15,8 @@
     <string name="rift_region_pbe">Beta Público</string>
     <string name="rift_region_ru">Rússia</string>
     <string name="rift_region_tr">Turquia</string>
+    <string name="rift_unable_to_get_ranked_information">Não conseguimos obter informações de ranqueadas nesse momento</string>
+    <string name="rift_cannot_find_summoner">Não conseguimos encontrar este invocador</string>
+    <string name="rift_cannot_get_version">Não conseguimos recuperar a última versão</string>
+    <string name="rift_cannot_get_champions">Não conseguimos obter informações dos campeões para este invocador</string>
 </resources>

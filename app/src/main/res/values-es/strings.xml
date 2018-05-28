@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">Nombre del invocador</string>
+    <string name="rift_search">buscar</string>
+    <string name="rift_region_brazil">Brasil</string>
+    <string name="rift_region_eune">Europa Norte y Este</string>
+    <string name="rift_region_euw">Europa Occidental</string>
+    <string name="rift_region_jp">Japón</string>
+    <string name="rift_region_kr">Corea</string>
+    <string name="rift_region_lan">América Latina del Norte</string>
+    <string name="rift_region_las">América latina del sur</string>
+    <string name="rift_region_na">Norteamérica</string>
+    <string name="rift_region_oce">Oceanía</string>
+    <string name="rift_region_pbe">Beta pública</string>
+    <string name="rift_region_ru">Rusia</string>
+    <string name="rift_region_tr">Turquía</string>
+    <string name="rift_unable_to_get_ranked_information">No podemos obtener información clasificada en este momento</string>
+    <string name="rift_cannot_find_summoner">No pudimos encontrar un convocador</string>
+    <string name="rift_cannot_get_version">No pudimos recuperar la última versión</string>
+    <string name="rift_cannot_get_champions">No pudimos obtener la información del campeón para este convocador</string>
+</resources>

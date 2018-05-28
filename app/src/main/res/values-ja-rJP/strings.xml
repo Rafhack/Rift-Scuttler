@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">召喚使いの名前</string>
+    <string name="rift_search">サーチ</string>
+    <string name="rift_region_brazil">ブラジル</string>
+    <string name="rift_region_eune">EU北欧および東</string>
+    <string name="rift_region_euw">EUウエスト</string>
+    <string name="rift_region_jp">日本</string>
+    <string name="rift_region_kr">韓国</string>
+    <string name="rift_region_lan">ラテンアメリカ北</string>
+    <string name="rift_region_las">ラテンアメリカ南</string>
+    <string name="rift_region_na">北米</string>
+    <string name="rift_region_oce">オセアニア</string>
+    <string name="rift_region_pbe">パブリックベータ</string>
+    <string name="rift_region_ru">ロシア</string>
+    <string name="rift_region_tr">七面鳥</string>
+    <string name="rift_unable_to_get_ranked_information">今すぐランキング情報を取得できません</string>
+    <string name="rift_cannot_find_summoner">召喚獣が見つかりませんでした</string>
+    <string name="rift_cannot_get_version">最後のバージョンを取得できませんでした</string>
+    <string name="rift_cannot_get_champions">この召喚兵のチャンピオン情報を取得できませんでした</string>
+</resources>

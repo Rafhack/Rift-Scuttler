@@ -1,6 +1,7 @@
 package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.presentation.summonersearch
 
 import android.content.Context
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.R
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.RiftScuttlerApplication
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BasePresenter
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Region
@@ -26,7 +27,7 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
                     view.onLoadSummoner(it)
                 }, {
                     view.setProgress(false)
-                    view.onError(it?.message as String)
+                    view.onError((view as Context).getString(R.string.rift_cannot_find_summoner))
                 })
     }
 
@@ -90,7 +91,7 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
                     view.onLoadVersions(it)
                 }, {
                     view.setProgress(false)
-                    view.onError(it.message as String)
+                    view.onError((view as Context).getString(R.string.rift_cannot_get_version))
                 })
     }
 

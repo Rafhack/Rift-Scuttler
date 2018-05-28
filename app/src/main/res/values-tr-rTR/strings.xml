@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">çağırıcı adı</string>
+    <string name="rift_search">arama</string>
+    <string name="rift_region_brazil">Brezilya</string>
+    <string name="rift_region_eune">AB İskandinav ve Doğu</string>
+    <string name="rift_region_euw">AB Batı</string>
+    <string name="rift_region_jp">Japonya</string>
+    <string name="rift_region_kr">Kore</string>
+    <string name="rift_region_lan">Latin Amerika Kuzey</string>
+    <string name="rift_region_las">Latin Amerika Güney</string>
+    <string name="rift_region_na">Kuzey Amerika</string>
+    <string name="rift_region_oce">Okyanusya</string>
+    <string name="rift_region_pbe">Genel Beta</string>
+    <string name="rift_region_ru">Rusya</string>
+    <string name="rift_region_tr">Türkiye</string>
+    <string name="rift_unable_to_get_ranked_information">Şu anda sıralı bilgi alamıyoruz</string>
+    <string name="rift_cannot_find_summoner">Toplayıcı bulamadık</string>
+    <string name="rift_cannot_get_version">Son sürümü alamadık</string>
+    <string name="rift_cannot_get_champions">Bu bilgi için şampiyon bilgisini alamadık</string>
+</resources>

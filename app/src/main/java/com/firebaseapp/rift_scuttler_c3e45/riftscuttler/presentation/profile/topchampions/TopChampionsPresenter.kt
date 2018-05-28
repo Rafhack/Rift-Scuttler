@@ -1,8 +1,10 @@
 package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.presentation.profile.topchampions
 
+import android.content.Context
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.R
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.base.BasePresenter
-import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.StaticDataInteractor
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.ChampionMasteryInteractor
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.StaticDataInteractor
 import rx.Single
 import rx.android.schedulers.AndroidSchedulers
 
@@ -22,7 +24,7 @@ class TopChampionsPresenter(view: TopChampionsView) : BasePresenter<TopChampions
                     view.onLoadChampAndMasteries(it.second, it.first)
                 }, {
                     view.setProgress(false)
-                    view.onError(it?.message as String)
+                    view.onError((view as Context).getString(R.string.rift_cannot_get_champions))
                 })
     }
 

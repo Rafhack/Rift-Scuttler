@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">소환사 이름</string>
+    <string name="rift_search">수색</string>
+    <string name="rift_region_brazil">브라질</string>
+    <string name="rift_region_eune">EU 북유럽 및 동부</string>
+    <string name="rift_region_euw">EU 서부</string>
+    <string name="rift_region_jp">일본</string>
+    <string name="rift_region_kr">대한민국</string>
+    <string name="rift_region_lan">라틴 아메리카 북부</string>
+    <string name="rift_region_las">라틴 아메리카 남부</string>
+    <string name="rift_region_na">북아메리카</string>
+    <string name="rift_region_oce">오세아니아</string>
+    <string name="rift_region_pbe">공개 베타</string>
+    <string name="rift_region_ru">러시아 제국</string>
+    <string name="rift_region_tr">터키</string>
+    <string name="rift_unable_to_get_ranked_information">지금 순위 정보를 얻을 수 없습니다.</string>
+    <string name="rift_cannot_find_summoner">소환사를 찾을 수 없습니다.</string>
+    <string name="rift_cannot_get_version">마지막 버전을 가져올 수 없습니다.</string>
+    <string name="rift_cannot_get_champions">이 소환사의 챔피언 정보를 얻을 수 없습니다.</string>
+</resources>

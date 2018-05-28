@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rift Scuttler</string>
+    <string name="rift_login_nick_hint">имя вызывающего</string>
+    <string name="rift_search">поиск</string>
+    <string name="rift_region_brazil">Бразилия</string>
+    <string name="rift_region_eune">ЕС Северный и Восточный</string>
+    <string name="rift_region_euw">Запад ЕС</string>
+    <string name="rift_region_jp">Япония</string>
+    <string name="rift_region_kr">Корея</string>
+    <string name="rift_region_lan">Латинская Америка Северная</string>
+    <string name="rift_region_las">Латинская Америка Южная</string>
+    <string name="rift_region_na">Северная Америка</string>
+    <string name="rift_region_oce">Океания</string>
+    <string name="rift_region_pbe">Публичная бета-версия</string>
+    <string name="rift_region_ru">Россия</string>
+    <string name="rift_region_tr">Турция</string>
+    <string name="rift_unable_to_get_ranked_information">Мы не можем получить ранжированную информацию прямо сейчас</string>
+    <string name="rift_cannot_find_summoner">Мы не смогли найти summoner</string>
+    <string name="rift_cannot_get_version">Мы не смогли получить последнюю версию</string>
+    <string name="rift_cannot_get_champions">Мы не смогли получить информацию о чемпионате для этого призывателя</string>
+</resources>

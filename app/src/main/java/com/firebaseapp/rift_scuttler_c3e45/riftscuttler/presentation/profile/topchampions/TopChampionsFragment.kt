@@ -1,6 +1,7 @@
 package com.firebaseapp.rift_scuttler_c3e45.riftscuttler.presentation.profile.topchampions
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -22,21 +23,22 @@ class TopChampionsFragment : Fragment(), TopChampionsView {
     private lateinit var imgChamp1: ImageView
     private lateinit var imgChamp2: ImageView
     private lateinit var imgChamp3: ImageView
+    private lateinit var rootView: View
 
     private val presenter = TopChampionsPresenter(this)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_top_champions, container, false)
+        rootView = inflater.inflate(R.layout.fragment_top_champions, container, false)
 
-        imgMastery1 = view.findViewById(R.id.fragment_top_champions_img_mastery_1)
-        imgMastery2 = view.findViewById(R.id.fragment_top_champions_img_mastery_2)
-        imgMastery3 = view.findViewById(R.id.fragment_top_champions_img_mastery_3)
-        imgChamp1 = view.findViewById(R.id.fragment_top_img_chmp_square_1)
-        imgChamp2 = view.findViewById(R.id.fragment_top_img_chmp_square_2)
-        imgChamp3 = view.findViewById(R.id.fragment_top_img_chmp_square_3)
+        imgMastery1 = rootView.findViewById(R.id.fragment_top_champions_img_mastery_1)
+        imgMastery2 = rootView.findViewById(R.id.fragment_top_champions_img_mastery_2)
+        imgMastery3 = rootView.findViewById(R.id.fragment_top_champions_img_mastery_3)
+        imgChamp1 = rootView.findViewById(R.id.fragment_top_img_chmp_square_1)
+        imgChamp2 = rootView.findViewById(R.id.fragment_top_img_chmp_square_2)
+        imgChamp3 = rootView.findViewById(R.id.fragment_top_img_chmp_square_3)
 
         init()
-        return view
+        return rootView
     }
 
     private fun init() {
@@ -71,6 +73,8 @@ class TopChampionsFragment : Fragment(), TopChampionsView {
     }
 
     override fun onError(message: String) {
+        Snackbar.make(rootView.findViewById(R.id.activity_base_progress_frm_root),
+                message, Snackbar.LENGTH_SHORT).show()
     }
 
     override fun setProgress(progress: Boolean) {

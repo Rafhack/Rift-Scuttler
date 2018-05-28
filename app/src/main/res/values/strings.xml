@@ -14,4 +14,8 @@
     <string name="rift_region_pbe">Public Beta</string>
     <string name="rift_region_ru">Russia</string>
     <string name="rift_region_tr">Turkey</string>
+    <string name="rift_unable_to_get_ranked_information">We\'re unable to get ranked information right now</string>
+    <string name="rift_cannot_find_summoner">We couldn\'t find summoner</string>
+    <string name="rift_cannot_get_version">We couldn\'t fetch the last version</string>
+    <string name="rift_cannot_get_champions">We couldn\'t get the champion information for this summoner</string>
 </resources>
