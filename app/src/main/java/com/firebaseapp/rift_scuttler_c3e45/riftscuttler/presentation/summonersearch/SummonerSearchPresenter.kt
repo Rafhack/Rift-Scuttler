@@ -7,6 +7,7 @@ import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Region
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.data.entities.Summoner
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.RegionInteractor
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.SpectatorIInteractor
+import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.StaticDataInteractor
 import com.firebaseapp.rift_scuttler_c3e45.riftscuttler.domain.SummonerInteractor
 import rx.android.schedulers.AndroidSchedulers
 
@@ -15,6 +16,7 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
     private val summonerInteractor = SummonerInteractor()
     private val spectatorIInteractor = SpectatorIInteractor()
     private val regionInteractor = RegionInteractor()
+    private val staticDataInteractor = StaticDataInteractor()
 
     fun getSummonerByName(summonerName: String) {
         view.setProgress(true)
@@ -76,6 +78,19 @@ class SummonerSearchPresenter(view: SummonerSearchView) : BasePresenter<Summoner
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
                     view.onLoadSummonerNameHistory(it)
+                })
+    }
+
+    fun getVersions() {
+        subscription = staticDataInteractor.getVersions()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({
+                    view.setProgress(false)
+                    RiftScuttlerApplication.version = it.first()
+                    view.onLoadVersions(it)
+                }, {
+                    view.setProgress(false)
+                    view.onError(it.message as String)
                 })
     }
 

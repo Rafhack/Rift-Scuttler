@@ -18,5 +18,6 @@ class RiftScuttlerApplication : Application() {
         var region: Region? = null
         var application: RiftScuttlerApplication? = null
         var summoner: Summoner? = null
+        var version: String = ""
     }
 }

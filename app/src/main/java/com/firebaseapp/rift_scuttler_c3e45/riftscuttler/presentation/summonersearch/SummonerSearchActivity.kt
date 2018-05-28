@@ -88,12 +88,16 @@ class SummonerSearchActivity : SummonerSearchView, BaseProgressActivity() {
         presenter.getActiveGame(summoner)
     }
 
-    override fun onNotCurrentPlaying(summoner: Summoner) {
+    override fun onLoadVersions(versions: List<String>?) {
         startActivity(Intent(this, ProfileActivity::class.java))
     }
 
-    override fun onLoadCurrentGame(currentGameInfo: CurrentGameInfo?, summoner: Summoner) {
+    override fun onNotCurrentPlaying(summoner: Summoner) {
+        presenter.getVersions()
+    }
 
+    override fun onLoadCurrentGame(currentGameInfo: CurrentGameInfo?, summoner: Summoner) {
+        presenter.getVersions()
     }
 
     override fun onLoadSavedSummonerName(name: String) {

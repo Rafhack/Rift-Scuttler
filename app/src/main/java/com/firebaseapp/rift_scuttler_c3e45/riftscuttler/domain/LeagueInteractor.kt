@@ -10,13 +10,8 @@ import rx.Single
  */
 class LeagueInteractor {
 
-    private val cachedService: LeagueService
-        get() = ServiceGenerator.createService(LeagueService::class.java, useForcedCache = true)
-
     private val service: LeagueService
-        get() = ServiceGenerator.createService(LeagueService::class.java)
-
-    fun getLeagueCachedPositions(summoerId: Long): Single<List<LeaguePosition>> = cachedService.getLeaguePosision(summoerId)
+        get() = ServiceGenerator.createService(LeagueService::class.java, useForcedCache = true)
 
     fun getLeaguePositions(summoerId: Long): Single<List<LeaguePosition>> = service.getLeaguePosision(summoerId)
 

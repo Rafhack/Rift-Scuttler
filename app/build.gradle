@@ -22,7 +22,8 @@ android {
 
         debug {
             buildConfigField "String", "API_URL", "\"https://%s.api.riotgames.com/lol/\""
-            buildConfigField "String", "API_KEY", "\"RGAPI-3e13d00e-2d3d-4a1a-9c8d-53ea1a2d414b\""
+            buildConfigField "String", "API_KEY", "\"RGAPI-8d604d1b-e130-4d52-b164-910f18fa4efe\""
+            buildConfigField "String", "STATIC_VERSIONED_URL", "\"http://ddragon.leagueoflegends.com/cdn/%s/img/\""
         }
     }
 }

@@ -12,5 +12,6 @@ interface SummonerSearchView : BaseView {
     fun onLoadSavedSummonerName(name: String)
     fun onLoadSavedRegion(region: String)
     fun onLoadSummonerNameHistory(savedNames: Set<String>?)
+    fun onLoadVersions(versions: List<String>?)
 
 }

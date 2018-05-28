@@ -27,8 +27,8 @@ object ServiceGenerator {
     //region FIELDS
     private const val DEFAULT_TIMEOUT: Long = 60
     private const val CACHE_SIZE: Long = 10 * 1024 * 1024
-    private const val MAX_STALE = 60 * 60 * 24 * 28
-    private const val MAX_AGE = 60 * 60
+    private const val MAX_STALE = 60 * 60 * 48
+    private const val MAX_AGE = 60 * 60 * 24
     private var authorization: String? = null
     private var useForcedCache: Boolean = false
     //endregion

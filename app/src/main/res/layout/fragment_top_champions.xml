@@ -6,46 +6,6 @@
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:id="@+id/fragment_top_champions_img_mastery_1"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chmp_mast_7"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/fragment_top_champions_img_mastery_2"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fragment_top_champions_img_mastery_3"
-        app:layout_constraintStart_toEndOf="@+id/fragment_top_champions_img_mastery_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chmp_mast_7"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/fragment_top_champions_img_mastery_3"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chmp_mast_7"
-        tools:ignore="ContentDescription" />
 
 
     <ImageView
@@ -92,6 +52,48 @@
         app:layout_constraintRight_toRightOf="@+id/fragment_top_champions_img_mastery_3"
         app:layout_constraintTop_toTopOf="@+id/fragment_top_champions_img_mastery_3"
         tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_top_champions_img_mastery_3"
+        app:layout_constraintStart_toEndOf="@+id/fragment_top_champions_img_mastery_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/fragment_top_champions_img_mastery_3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chmp_mast_7"
+        tools:ignore="ContentDescription" />
+
 
 
 </android.support.constraint.ConstraintLayout>
